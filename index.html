@@ -15,30 +15,30 @@
 
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="nav-left">ANAK GROWTHCO</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="logo-container">
-     <img src="images/logo.png" alt="ANAK Logo" />
-    </div>
-  </header>
+<header>
+  <div class="nav-left">ANAK GROWTHCO</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <!-- HERO SECTION -->
+</header>
+
+
   <section class="hero">
-    <div class="hero-content">
-      <h1>Fresh Roots - Flourishing Reach</h1>
-      <p>
-        At <strong>ANAK Growthco</strong>, we combine <span class="highlight">creativity</span> and <span class="highlight">data</span>
-        to scale your digital presence.
-      </p>
-      <button class="cta">Explore Services</button>
+  <div class="hero-content" data-aos="fade-up">
+    
+    <h1><span class="typewriter"></span></h1>
+
+    <p>We help businesses grow through <span class="highlight">creative storytelling</span> and <span class="highlight">data-driven strategies</span>.</p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn">Our Services</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- ABOUT SECTION -->
 <section class="about">
@@ -179,6 +179,8 @@
       <p>📍 <strong>Location:</strong> BANGALORE, KARNATAKA</p>
       <p>📞 <strong>Phone:</strong> +91 8593814661</p>
       <p>📧 <strong>Email:</strong> anakgrowthco@gmail.com</p>
+</div>
+
     </div>
 
     <!-- Contact Form -->
@@ -273,8 +275,40 @@
   });
 </script>
 
+<script>
+  const typewriterText = "Fresh Roots - Flourishing Reach";
+  const typewriter = document.querySelector(".typewriter");
+
+  let i = 0;
+
+  function type() {
+    if (i < typewriterText.length) {
+      typewriter.innerHTML += typewriterText.charAt(i);
+      i++;
+      setTimeout(type, 80);
+    }
+  }
+
+  type();
+</script>
 
 
+<a href="#" class="back-to-top" id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<script>
+  // Show/hide the back-to-top button
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+</script>
 
 </body>
 </html>

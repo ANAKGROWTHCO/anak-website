@@ -11,27 +11,49 @@ body {
   color: white;
 }
 
-/* Header styles */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a; /* Match your site background */
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: white;
-  color: #111827;
-  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 .nav-left {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
 }
 
 nav a {
-  margin-left: 20px;
+  color: #ffffff;
   text-decoration: none;
-  color: #111827;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.logo-container img {
+  display: none; /* Hide the logo if you're not using it here */
+}
+
 }
 
 /* Logo top-right animation */
@@ -49,11 +71,18 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(#0f172a, #0f172a, #0f172a);
-  color: white;
+  height: 100vh; /* Full screen height */
+  background-color: #0f172a; /* Clean dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 100px 20px;
+  color: #ffffff;
+  padding: 2rem;
+  position: relative;
 }
+
+
 
 .hero h1 {
   font-size: 42px;
@@ -694,3 +723,112 @@ footer {
 }
 
 
+.site-header {
+  background-color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #111;
+}
+
+.main-nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #007BFF;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #fff;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+}
+
+
+.typewriter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #f5f5f5;
+  color: #0f172a;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  z-index: 999;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #f5f5f5;
+}
