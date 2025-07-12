@@ -26,18 +26,17 @@
 </header>
 
 
-  <section class="hero">
-  <div class="hero-content" data-aos="fade-up">
-    
-    <h1><span class="typewriter"></span></h1>
-
-    <p>We help businesses grow through <span class="highlight">creative storytelling</span> and <span class="highlight">data-driven strategies</span>.</p>
-    <div class="hero-buttons">
-      <a href="#services" class="btn">Our Services</a>
-      <a href="#contact" class="btn btn-outline">Get in Touch</a>
-    </div>
+<!-- HERO SECTION -->
+<section class="hero premium-hero" id="home">
+  <div class="hero-container" data-aos="fade-up">
+    <h1 class="hero-heading">Fresh Roots - Flourishing Roots</h1>
+    <p class="hero-subtext">
+      At <strong>ANAK Growthco</strong>, we deliver data-backed marketing that drives real business results.
+    </p>
+    <a href="#services" class="btn-premium">Explore Our Services</a>
   </div>
 </section>
+
 
 
   <!-- ABOUT SECTION -->
@@ -170,52 +169,50 @@
 
 <!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
-  <h2>Contact Us</h2>
-  <p>We’d love to help your brand grow. Reach out today!</p>
+  <h2 data-aos="fade-up">Contact Us</h2>
+<p data-aos="fade-up" data-aos-delay="100">We’d love to help your brand grow. Reach out today!</p>
+  <div class="contact-flex-container">
+  <!-- Contact Details -->
+  <div class="contact-box contact-details" data-aos="fade-right">
+    <p>📍 <strong>Location:</strong> Bangalore, Karnataka</p>
+    <p>📞 <strong>Phone:</strong> +91 8593814661</p>
+    <p>📧 <strong>Email:</strong> anakgrowthco@gmail.com</p>
+  </div>
 
-  <div class="contact-container">
-    <!-- Contact Details -->
-    <div class="contact-details">
-      <p>📍 <strong>Location:</strong> BANGALORE, KARNATAKA</p>
-      <p>📞 <strong>Phone:</strong> +91 8593814661</p>
-      <p>📧 <strong>Email:</strong> anakgrowthco@gmail.com</p>
+  <!-- Contact Form -->
+  <form class="contact-box contact-form" data-aos="fade-left">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </div>
 
-    </div>
 
-    <!-- Contact Form -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+
+
+<section class="testimonials" id="testimonials">
+  <h2 class="testimonials-title">What Our Clients Say</h2>
+  <div class="testimonial-grid">
+    <!-- testimonial cards here -->
   </div>
 </section>
-
-<section class="testimonials" data-aos="zoom-in">
-  ...
-</section>
-
-<!-- TESTIMONIALS SECTION -->
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
   <div class="testimonial-grid">
     <div class="testimonial-card">
-      <p>"ANAK Growthco completely transformed our online presence. Their strategies just work!"</p>
+      <p>"ANAK Growthco completely transformed our online presence."</p>
       <h4>– Maya R., Startup Founder</h4>
     </div>
     <div class="testimonial-card">
-      <p>"Their content marketing helped us reach new audiences consistently. Highly recommended."</p>
+      <p>"Their content marketing helped us reach new audiences."</p>
       <h4>– Rahul S., Marketing Head</h4>
     </div>
     <div class="testimonial-card">
-      <p>"Working with ANAK was smooth, professional, and effective. They're experts at digital growth."</p>
+      <p>"Working with ANAK was smooth, professional, and effective."</p>
       <h4>– Diya M., Brand Strategist</h4>
     </div>
   </div>
 </section>
-<section class="testimonials" data-aos="zoom-in">
+<section class="services" data-aos="fade-right">
   ...
 </section>
 
@@ -248,8 +245,12 @@
 <!-- AOS JS -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 </script>
+
 
 
 
