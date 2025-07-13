@@ -320,9 +320,24 @@ footer {
   margin-bottom: 12px;
 }
 
-.contact-info p {
-  margin: 6px 0;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
 }
+
+.contact-info,
+.contact-form {
+  background: #0a0a0a;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  color: white;
+}
+
 
 
 .contact-form {
