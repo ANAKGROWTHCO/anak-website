@@ -16,13 +16,23 @@
 </head>
 <body>
 <header>
-  <div class="nav-left">ANAK GROWTHCO</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+  <div class="nav-left">ANAK Growthco</div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
   </nav>
 
+  <div class="logo-container">
+    <img src="logo.png" alt="ANAK Logo" />
+  </div>
 </header>
 
 
@@ -55,6 +65,27 @@
   </div>
 </section>
 
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="images/logo2.jpg" alt="ANAK Logo" />
+    </div>
+    <div class="about-text">
+      <!-- <h2>About <span>ANAK Growthco</span></h2> -->
+      <p>
+        ANAK Growthco is a data-driven digital marketing brand founded by <strong>Anagha & Akash</strong>.
+        With a vision to empower startups and local businesses, we craft campaigns that blend creativity with strategy.
+      </p>
+      <p>
+        From paid ads to SEO, from analytics to content — we help brands boost conversions, scale faster, and stand out online.
+      </p>
+  
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
@@ -86,32 +117,76 @@
 
 
 <!-- SERVICES SECTION -->
-<section class="services" id="services" data-aos="fade-up">
-  <h2>Our Services</h2>
-  <p class="section-subtitle">We offer impactful, results-driven solutions to grow your brand.</p>
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
 
-  <div class="services-grid">
-    <div class="service-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>SEO & Content</h3>
-      <p>Optimize visibility and reach with keyword-rich content and smart SEO strategies.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-bullhorn"></i>
-      <h3>Performance Ads</h3>
-      <p>Drive conversions through targeted ad campaigns on Google, Facebook, and Instagram.</p>
-    </div>
-    <div class="service-card">
-      <i class="fas fa-lightbulb"></i>
-      <h3>Brand Strategy</h3>
-      <p>Craft your identity with data-driven positioning, design, and communication planning.</p>
+
+      
+      <!-- Service 1 -->
+      <div class="service-card">
+        <h3>Performance Marketing</h3>
+        <p>ROI-focused ad campaigns across Google, Facebook, and Instagram — designed to scale your growth with real results.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <h3>SEO & Organic Growth</h3>
+        <p>Improve visibility and traffic with technical SEO, keyword targeting, and long-term ranking strategies.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <h3>Social Media Marketing</h3>
+        <p>Grow your audience and build brand presence through engaging content on Instagram, LinkedIn, and more.</p>
+      </div>
+
+      
+
+      <!-- Service 5 -->
+      <div class="service-card">
+        <h3>Branding & Identity</h3>
+        <p>We create brand kits, logos, and visuals that give your business a premium, unforgettable identity.</p>
+      </div>
+
+      <!-- Service 6 -->
+<div class="service-card">
+  <h3>Website Design & Development</h3>
+  <p>Build fast, responsive, and conversion-optimized websites — custom-coded or powered by platforms like WordPress.</p>
+</div>
+
+<!-- Service 7 -->
+<div class="service-card">
+  <h3>Email Marketing & Automation</h3>
+  <p>Create smart email flows, newsletters, and drip campaigns that nurture leads and boost retention.</p>
+</div>
+
+<!-- Service 8 -->
+<div class="service-card">
+  <h3>Marketing Strategy Consulting</h3>
+  <p>1-on-1 growth strategy planning, campaign mapping, and funnel design — get clarity and direction for every stage.</p>
+</div>
+
+<!-- Service 9 -->
+<div class="service-card">
+  <h3>Lead Generation</h3>
+  <p>We drive qualified B2B and B2C leads through custom funnels, targeted ads, and optimized landing pages.</p>
+</div>
+
+<!-- Service 10 -->
+<div class="service-card">
+  <h3>Analytics, Reports & CRO</h3>
+  <p>Monthly reports, deep performance insights, and A/B testing to improve every touchpoint and increase conversions.</p>
+</div>
+
+
+
     </div>
   </div>
 </section>
 
-<section class="services" data-aos="fade-right">
-  ...
-</section>
+
 <!-- PORTFOLIO SECTION -->
 <section class="portfolio" id="portfolio" data-aos="fade-up">
   <h2>Our Work</h2>
@@ -163,75 +238,113 @@
 
 
 <!-- BLOG SECTION -->
-<section class="blog">
-  <h2>Latest from Our Blog</h2>
-  <div class="blog-grid">
-    <div class="blog-post">
-      <h3>Top 5 Digital Marketing Trends in 2025</h3>
-      <p>Stay ahead with the latest insights on AI-driven campaigns, automation, and personalization.</p>
-      <a href="#">Read More →</a>
-    </div>
-    <div class="blog-post">
-      <h3>Why Data Matters in Your Ad Strategy</h3>
-      <p>Discover how data analytics can unlock new performance insights for your business.</p>
-      <a href="#">Read More →</a>
-    </div>
-    <div class="blog-post">
-      <h3>Content That Converts: A Guide</h3>
-      <p>Learn how to write content that engages your audience and drives conversions.</p>
-      <a href="#">Read More →</a>
+<section class="blog-section" id="blog">
+  <div class="blog-container">
+    <h2 class="section-title">Latest Insights</h2>
+    <p class="section-subtitle">Explore trending tips and strategies in digital marketing.</p>
+    <div class="blog-grid">
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <h3>Top 5 SEO Trends in 2025</h3>
+        <p>Stay ahead with the most important SEO updates and algorithm strategies this year.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <h3>Performance Marketing Secrets</h3>
+        <p>How to scale ROI-driven ad campaigns like a pro — real data and tips inside.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="blog-card">
+        <h3>Social Media Growth Guide</h3>
+        <p>Build your presence on Instagram, LinkedIn, and YouTube using proven frameworks.</p>
+        <a href="#">Read More</a>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
-  <h2 data-aos="fade-up">Contact Us</h2>
-<p data-aos="fade-up" data-aos-delay="100">We’d love to help your brand grow. Reach out today!</p>
-  <div class="contact-flex-container">
-  <!-- Contact Details -->
-  <div class="contact-box contact-details" data-aos="fade-right">
-    <p>📍 <strong>Location:</strong> Bangalore, Karnataka</p>
-    <p>📞 <strong>Phone:</strong> +91 8593814661</p>
-    <p>📧 <strong>Email:</strong> anakgrowthco@gmail.com</p>
-  </div>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p class="section-subtitle"></p>
 
-  <!-- Contact Form -->
-  <form class="contact-box contact-form" data-aos="fade-left">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-
-
-
-
-<section class="testimonials" id="testimonials">
-  <h2 class="testimonials-title">What Our Clients Say</h2>
-  <div class="testimonial-grid">
-    <!-- testimonial cards here -->
-  </div>
-</section>
-  <div class="testimonial-grid">
-    <div class="testimonial-card">
-      <p>"ANAK Growthco completely transformed our online presence."</p>
-      <h4>– Maya R., Startup Founder</h4>
+    <div class="contact-content">
+      <!-- Contact Details -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2></h2>
+      <p>Let’s work together to build something amazing.</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> contact@anakgrowthco.com</p>
+        <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+      </div>
     </div>
-    <div class="testimonial-card">
-      <p>"Their content marketing helped us reach new audiences."</p>
-      <h4>– Rahul S., Marketing Head</h4>
-    </div>
-    <div class="testimonial-card">
-      <p>"Working with ANAK was smooth, professional, and effective."</p>
-      <h4>– Diya M., Brand Strategist</h4>
+    <!-- contact form-->
+    <div class="contact-right">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 </section>
-<section class="services" data-aos="fade-right">
-  ...
+
+<!-- section growth map -->
+<section id="growth-map" class="growth-map-section">
+  <h2>Our Global Impact</h2>
+  <p>From local roots to worldwide reach — we're growing across the globe.</p>
+  <div class="map-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map" class="world-map-base">
+    
+    <!-- Animated dots -->
+    <!--<div class="growth-dot" style="top: 40%; left: 60%;"></div> --> <!-- Example:  -->
+    <div class="growth-dot" style="top: 45%; left: 70%;"></div> <!-- Example: India -->
+    <!-- <div class="growth-dot" style="top: 50%; left: 75%;"></div> --><!-- Example:  -->
+    <!--<div class="growth-dot" style="top: 55%; left: 20%;"></div> --> <!-- Example:  -->
+  </div>
 </section>
+
+
+
+
+
+
+
+<!-- Testimonial section -->
+<section id="testimonials" class="testimonials-section" data-aos="fade-up">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>“ANAK Growthco helped us triple our leads in just 3 weeks. Super professional!”</p>
+        <h4>— Aayush B., Startup Founder</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“Brilliant strategy and smooth execution. They brought creativity and clarity to our campaigns.”</p>
+        <h4>— Sneha M., Brand Manager</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“From content to ads, they handled everything so smoothly. Highly recommend!”</p>
+        <h4>— Raj K., eComm Owner</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+</section>
+
 
 
 
@@ -250,6 +363,13 @@
   <!-- FOOTER -->
 <footer>
   <div class="footer-content">
+    <div class="social-icons">
+  <a href="https://www.facebook.com/anakgrowthco" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/anakgrowthco" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/anakgrowthco" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.twitter.com/anakgrowthco" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+
     <p>&copy; 2025 ANAK Growthco. All rights reserved.</p>
     <div class="footer-links">
       <a href="#">Privacy Policy</a>
@@ -327,6 +447,34 @@
     }
   };
 </script>
+
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      header.style.top = "-100px";
+    } else {
+      // Scrolling up
+      header.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('active');
+  }
+</script>
+
+
 
 </body>
 </html>
